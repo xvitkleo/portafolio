@@ -1,0 +1,47 @@
+/*@keyframes move{
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(0, -5vh);
+    }
+}
+
+.sub {
+    pointer-events: none;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}*/
+
+/*navs.forEach(nav => nav.addEventListener('mouseover', function(){
+    let subrayado = document.createElement("span")
+    subrayado.style.backgroundColor = "rgb(231,105,116)";
+    subrayado.style.height = "1px";
+    subrayado.style.width = "100%";
+    switch (nav.firstElementChild.lastElementChild.textContent) {
+        case "HOME": 
+            subrayado.style.bottom = "2vh";
+            break;
+        case "SKILLS":
+            subrayado.style.bottom = "1vh";
+            break;
+        case "ACADEMIC":
+            subrayado.style.bottom = "0.5vh";
+            break;
+        case "CONTACT":
+            subrayado.style.bottom = "0";
+            break;
+    }  ;
+    subrayado.style.position = "absolute";
+    subrayado.classList = "sub";
+    nav.style.borderBottom = "none";
+    nav.appendChild(subrayado);    
+}));
+
+navs.forEach(nav => nav.addEventListener('mouseout', function(){
+    nav.style.borderBottom = "solid rgb(231,105,116) 1px";     
+    document.querySelector(".sub").remove();   
+}));
+
+*/

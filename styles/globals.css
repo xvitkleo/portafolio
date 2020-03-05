@@ -1,0 +1,49 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  border: solid white 2rem;
+  background-color: #ff5851;
+}
+
+body {
+  overflow: hidden;
+  background-color: white;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h1 {
+  padding-right: 0.5rem;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #1d1d1d;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+h1:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  color: white;
+}
+/*# sourceMappingURL=globals.css.map */

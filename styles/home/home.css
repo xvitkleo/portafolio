@@ -1,0 +1,17 @@
+.home > div {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home_tittle {
+  max-width: 80vw;
+}
+
+.home {
+  padding-left: 8rem;
+}
+/*# sourceMappingURL=home.css.map */

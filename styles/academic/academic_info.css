@@ -1,0 +1,63 @@
+.academic_info {
+  z-index: 0;
+  background-color: white;
+  text-align: right;
+  width: 50vw;
+  -webkit-clip-path: inset(0 0 0 100%);
+          clip-path: inset(0 0 0 100%);
+  -webkit-animation: academic_info_appear 1s ease forwards;
+          animation: academic_info_appear 1s ease forwards;
+}
+
+.academic_info div {
+  margin: auto;
+}
+
+.academic_info h2 {
+  color: #ff5851;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.academic_info p {
+  color: #1d1d1d;
+  font-family: 'Cookie', cursive;
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+}
+
+.academic_info h2, .academic_info p {
+  width: 30vw;
+  line-height: 2rem;
+}
+
+@-webkit-keyframes academic_info_appear {
+  from {
+    -webkit-clip-path: inset(0 0 0 100%);
+            clip-path: inset(0 0 0 100%);
+    -webkit-transform: translate(100%);
+            transform: translate(100%);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0%);
+            clip-path: inset(0 0 0 0%);
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+}
+
+@keyframes academic_info_appear {
+  from {
+    -webkit-clip-path: inset(0 0 0 100%);
+            clip-path: inset(0 0 0 100%);
+    -webkit-transform: translate(100%);
+            transform: translate(100%);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0%);
+            clip-path: inset(0 0 0 0%);
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+}
+/*# sourceMappingURL=academic_info.css.map */

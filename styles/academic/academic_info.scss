@@ -1,0 +1,42 @@
+@import "../variables";
+
+.academic_info {   
+    z-index: 0;       
+    background-color: white;  
+    text-align: right;
+    width: 50vw;
+    clip-path: inset(0 0 0 100%);
+    animation: academic_info_appear 1s ease forwards;
+
+    div {
+        margin: auto;
+    }
+    h2 {
+        color: $color-principal;
+        margin-bottom: 2rem;  
+        font-size: 2.5rem;    
+    }
+    p {
+        color: $color-secundario;
+        font-family: 'Cookie', cursive;
+        
+        font-size: 2.5rem;
+        line-height: 2.9rem;
+    }
+
+    h2, p {     
+        width: 30vw;
+        line-height: 2rem;
+    }
+}
+
+@keyframes academic_info_appear{
+    from {
+        clip-path: inset(0 0 0 100%);
+        transform: translate(100%);
+    }
+    to {
+        clip-path: inset(0 0 0 0%);
+        transform: translate(0%);
+    }
+}

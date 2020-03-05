@@ -1,0 +1,270 @@
+.academic {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.academic_left {
+  width: 45.8vw;
+}
+
+.academic_tittle {
+  margin: 1rem;
+}
+
+.scene {
+  width: 12.5rem;
+  height: 12.5rem;
+  -webkit-perspective: 37.5rem;
+          perspective: 37.5rem;
+  margin: 1.3rem 0rem 1.5rem 3rem;
+  cursor: pointer;
+}
+
+.scene img {
+  width: 9rem;
+  height: 9rem;
+  opacity: 40%;
+  margin: 1.5rem;
+}
+
+.scene {
+  margin: 20vh auto 0 auto;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  overflow: visible;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform: translateZ(-100px);
+          transform: translateZ(-100px);
+}
+
+.cube__face {
+  position: absolute;
+  width: 12.5rem;
+  height: 12.5rem;
+  background-color: rgba(253, 253, 253, 0.226);
+  line-height: 12.5rem;
+  text-align: center;
+}
+
+.cube__face--front {
+  -webkit-transform: rotateY(0deg) translateZ(100px);
+          transform: rotateY(0deg) translateZ(100px);
+}
+
+.cube__face--right {
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+          transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube__face--back {
+  -webkit-transform: rotateY(180deg) translateZ(100px);
+          transform: rotateY(180deg) translateZ(100px);
+}
+
+.cube__face--left {
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+          transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cube__face--top {
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+          transform: rotateX(90deg) translateZ(100px);
+}
+
+.cube__face--bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(100px);
+          transform: rotateX(-90deg) translateZ(100px);
+}
+
+.cube.show-front {
+  -webkit-transform: translateZ(-100px) rotateY(0deg);
+          transform: translateZ(-100px) rotateY(0deg);
+}
+
+.cube.show-front .cube__face--front img {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.cube.show-right {
+  -webkit-transform: translateZ(-100px) rotateY(-90deg);
+          transform: translateZ(-100px) rotateY(-90deg);
+}
+
+.cube.show-right .cube__face--right img {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.cube.show-back {
+  -webkit-transform: translateZ(-100px) rotateY(-180deg);
+          transform: translateZ(-100px) rotateY(-180deg);
+}
+
+.cube.show-back .cube__face--back img {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.cube.show-left {
+  -webkit-transform: translateZ(-100px) rotateY(90deg);
+          transform: translateZ(-100px) rotateY(90deg);
+}
+
+.cube.show-left .cube__face--left img {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.cube.show-top {
+  -webkit-transform: translateZ(-100px) rotateX(-90deg);
+          transform: translateZ(-100px) rotateX(-90deg);
+}
+
+.cube.show-top .cube__face--top img {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.cube.show-bottom {
+  -webkit-transform: translateZ(-100px) rotateX(90deg);
+          transform: translateZ(-100px) rotateX(90deg);
+}
+
+.cube.show-bottom .cube__face--bottom img {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.cube.random {
+  -webkit-animation: random 8s infinite linear;
+          animation: random 8s infinite linear;
+}
+
+@-webkit-keyframes random {
+  0% {
+    -webkit-transform: translateZ(-100px) rotateY(90deg);
+            transform: translateZ(-100px) rotateY(90deg);
+  }
+  20% {
+    -webkit-transform: translateZ(-100px) rotateX(180deg);
+            transform: translateZ(-100px) rotateX(180deg);
+  }
+  40% {
+    -webkit-transform: translateZ(-100px) rotateY(90deg);
+            transform: translateZ(-100px) rotateY(90deg);
+  }
+  60% {
+    -webkit-transform: translateZ(-100px) rotateY(-90deg);
+            transform: translateZ(-100px) rotateY(-90deg);
+  }
+  80% {
+    -webkit-transform: translateZ(-100px) rotateX(-180deg);
+            transform: translateZ(-100px) rotateX(-180deg);
+  }
+  100% {
+    -webkit-transform: translateZ(-100px) rotateY(-270deg);
+            transform: translateZ(-100px) rotateY(-270deg);
+  }
+}
+
+@keyframes random {
+  0% {
+    -webkit-transform: translateZ(-100px) rotateY(90deg);
+            transform: translateZ(-100px) rotateY(90deg);
+  }
+  20% {
+    -webkit-transform: translateZ(-100px) rotateX(180deg);
+            transform: translateZ(-100px) rotateX(180deg);
+  }
+  40% {
+    -webkit-transform: translateZ(-100px) rotateY(90deg);
+            transform: translateZ(-100px) rotateY(90deg);
+  }
+  60% {
+    -webkit-transform: translateZ(-100px) rotateY(-90deg);
+            transform: translateZ(-100px) rotateY(-90deg);
+  }
+  80% {
+    -webkit-transform: translateZ(-100px) rotateX(-180deg);
+            transform: translateZ(-100px) rotateX(-180deg);
+  }
+  100% {
+    -webkit-transform: translateZ(-100px) rotateY(-270deg);
+            transform: translateZ(-100px) rotateY(-270deg);
+  }
+}
+
+.academic_info {
+  z-index: 0;
+  background-color: white;
+  text-align: right;
+  width: 50vw;
+  -webkit-clip-path: inset(0 0 0 100%);
+          clip-path: inset(0 0 0 100%);
+  -webkit-animation: academic_info_appear 1s ease forwards;
+          animation: academic_info_appear 1s ease forwards;
+}
+
+.academic_info div {
+  margin: auto;
+}
+
+.academic_info h2 {
+  color: #ff5851;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.academic_info p {
+  color: #1d1d1d;
+  font-family: 'Cookie', cursive;
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+}
+
+.academic_info h2, .academic_info p {
+  width: 30vw;
+  line-height: 2rem;
+}
+
+@-webkit-keyframes academic_info_appear {
+  from {
+    -webkit-clip-path: inset(0 0 0 100%);
+            clip-path: inset(0 0 0 100%);
+    -webkit-transform: translate(100%);
+            transform: translate(100%);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0%);
+            clip-path: inset(0 0 0 0%);
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+}
+
+@keyframes academic_info_appear {
+  from {
+    -webkit-clip-path: inset(0 0 0 100%);
+            clip-path: inset(0 0 0 100%);
+    -webkit-transform: translate(100%);
+            transform: translate(100%);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0%);
+            clip-path: inset(0 0 0 0%);
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+}
+/*# sourceMappingURL=academic.css.map */

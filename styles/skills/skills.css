@@ -1,0 +1,103 @@
+.skills_tittle {
+  margin: 1rem;
+}
+
+.skills_tittle h1:hover {
+  color: #ff5851;
+}
+
+.skills {
+  background-color: white;
+}
+
+.skills p {
+  color: #1d1d1d;
+  width: 40vw;
+}
+
+.skills_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+  margin: auto;
+}
+
+.skills_left {
+  margin: 5rem auto auto 9rem;
+}
+
+.skills_left p {
+  width: 30vw;
+  font-family: 'Cookie', cursive;
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+}
+
+.skills_right {
+  width: 40vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (33.333%)[3];
+      grid-template-columns: repeat(3, 33.333%);
+  -ms-grid-rows: (33.333%)[3];
+      grid-template-rows: repeat(3, 33.333%);
+  background-color: #1d1d1d;
+  font-size: 5rem;
+  margin: 0 3rem 3rem 3rem;
+}
+
+.skills_right p {
+  font-size: 1rem;
+  color: white;
+  max-width: 100%;
+  font-family: 'Roboto mono';
+  padding: 1rem;
+  z-index: 1;
+}
+
+.skills_right i {
+  display: inline;
+  z-index: 1;
+}
+
+.skills_item {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills_hover {
+  height: 100%;
+  width: 100%;
+  background-color: #ff5851;
+  -webkit-clip-path: inset(100% 0 0 0);
+          clip-path: inset(100% 0 0 0);
+  -webkit-transition: -webkit-clip-path 0.5s ease;
+  transition: -webkit-clip-path 0.5s ease;
+  transition: clip-path 0.5s ease;
+  transition: clip-path 0.5s ease, -webkit-clip-path 0.5s ease;
+  position: absolute;
+  bottom: 0;
+}
+
+.hasHover .skills_right div:hover p, .hasHover .skills_right div:hover i {
+  color: #1d1d1d;
+}
+
+.hasHover .skills_right div:hover .skills_hover {
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+  z-index: 0;
+}
+/*# sourceMappingURL=skills.css.map */

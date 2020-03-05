@@ -1,0 +1,86 @@
+@import "../variables";
+
+.skills_tittle {
+    margin: 1rem;
+    h1:hover {
+        color: $color-principal;
+    }
+}
+
+.skills {
+    background-color: white;
+    
+    p {
+        color: $color-secundario;
+        width: 40vw;
+    }
+}
+
+.skills_wrapper {    
+    display: flex;
+    height: 80vh;
+    margin: auto;
+}
+
+
+
+.skills_left {
+    margin: 5rem auto auto 9rem;
+    p {
+        width: 30vw;        
+        font-family: 'Cookie', cursive;
+        font-size: 2.5rem;
+        line-height: 2.9rem;
+    }
+}
+.skills_right {
+    width: 40vw;    
+    display: grid;
+    grid-template-columns: repeat(3, 33.333%);
+    grid-template-rows: repeat(3, 33.333%);
+    background-color: $color-secundario;
+    font-size: 5rem;
+    margin: 0 3rem 3rem 3rem; 
+    p {
+        font-size: 1rem;
+        color: white;
+        max-width: 100%;
+        font-family: 'Roboto mono';
+        padding: 1rem;
+        z-index: 1;
+    }
+    i {
+        display: inline;
+        z-index: 1;
+    }
+    
+}
+
+.skills_item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+}
+
+.skills_hover {   
+    height: 100%;
+    width: 100%;
+    background-color: $color-principal;
+    clip-path: inset(100% 0 0 0);   
+    transition: clip-path 0.5s ease;  
+    position: absolute;
+    bottom: 0;
+}
+
+.hasHover .skills_right div:hover {
+    p, i {
+        color: $color-secundario;
+    }
+    .skills_hover{            
+        clip-path: inset(0 0 0 0);
+        z-index: 0;
+    }
+}

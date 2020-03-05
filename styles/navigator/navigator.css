@@ -1,0 +1,102 @@
+.bar {
+  position: fixed;
+  background-color: #181818;
+  top: 20vh;
+  width: 5rem;
+  -webkit-transition: width 200ms ease;
+  transition: width 200ms ease;
+}
+
+.hasHover .bar:hover {
+  width: 12rem;
+  -webkit-transition: width 200ms ease;
+  transition: width 200ms ease;
+}
+
+.hasHover .bar:hover p {
+  display: block;
+}
+
+/*.bar_nav {
+    height: 100%;
+    display: flex;    
+    flex-direction: column;  
+    align-items: center;  
+}*/
+.bar_nav_item {
+  height: 12vh;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-filter: grayscale(100%) opacity(0.7);
+          filter: grayscale(100%) opacity(0.7);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.bar_nav_item a {
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.bar_nav_item a p {
+  display: none;
+  font-size: 0.8rem;
+  margin-left: 3rem;
+}
+
+.bar_nav_item a i {
+  margin-left: 1.5rem;
+}
+
+.hasHover .bar_nav_item:hover:not(.logo) {
+  -webkit-filter: grayscale(0%) opacity(1);
+          filter: grayscale(0%) opacity(1);
+  background-color: #130f0f;
+}
+
+.hasHover .bar_nav_item:hover:not(.logo) i, .hasHover .bar_nav_item:hover:not(.logo) p {
+  color: #ff5851;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 0.5ch;
+  background-color: #130f0f;
+  text-align: center;
+  border-bottom: solid #e76974 1px;
+}
+
+.logo a i {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.logo a p {
+  margin-left: 1.15rem;
+}
+
+.hasHover .bar:hover .logo i {
+  margin-left: 0.4rem;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+/*# sourceMappingURL=navigator.css.map */

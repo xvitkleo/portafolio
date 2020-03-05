@@ -1,0 +1,25 @@
+@import "../variables";
+$alto: 60vh;
+
+.scrollbar {
+    z-index: 1;
+    height: 60vh;
+    top: 20vh;
+    right: 0.7rem;
+    position: fixed;
+    width: 0.5rem;
+    background-color: $color-terciario;
+    overflow: hidden;
+    border-radius: 20px;
+
+    div {
+        position: absolute;
+        width: 100%;
+        background-color: $color-principal;
+        height: 15vh;
+        border: solid $color-principal 2px;
+        border-radius: 20px;
+        
+        transition: height  1s ease;
+    }
+}

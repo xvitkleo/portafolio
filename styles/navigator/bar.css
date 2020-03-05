@@ -1,0 +1,19 @@
+.bar {
+  position: fixed;
+  background-color: #181818;
+  top: 20vh;
+  width: 5rem;
+  -webkit-transition: width 200ms ease;
+  transition: width 200ms ease;
+}
+
+.hasHover .bar:hover {
+  width: 12rem;
+  -webkit-transition: width 200ms ease;
+  transition: width 200ms ease;
+}
+
+.hasHover .bar:hover p {
+  display: block;
+}
+/*# sourceMappingURL=bar.css.map */

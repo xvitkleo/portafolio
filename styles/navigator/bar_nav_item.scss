@@ -1,0 +1,36 @@
+@import "../variables";
+
+.bar_nav_item {   
+    //width: 100%;   
+    height: 12vh;  
+    font-size: 1.5rem;
+    display: flex;      
+    //border-bottom: solid rgb(231,105,116) 1px; 
+    cursor: pointer;         
+    filter: grayscale(100%) opacity(0.7);
+    transition: 1s;   
+    
+    a {
+        pointer-events: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        p {
+            display: none;
+            font-size: 0.8rem;
+            margin-left: 3rem;
+        }    
+        i {
+            margin-left: 1.5rem;
+        }
+    } 
+}
+
+.hasHover .bar_nav_item:hover:not(.logo) {      
+    filter: grayscale(0%) opacity(1);  
+    background-color: rgb(19, 15, 15);     
+    i, p {
+        color: $color-principal;  
+        transition: color 1s;                     
+    }                      
+}

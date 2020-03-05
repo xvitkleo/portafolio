@@ -1,0 +1,26 @@
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 0.5ch;
+    background-color: rgb(19, 15, 15);  
+    text-align: center;
+    border-bottom: solid rgb(231,105,116) 1px; 
+
+    a {
+        i {
+            transform: rotate(0deg);
+            transition: transform 1s;    
+        }
+        p {
+            margin-left: 1.15rem;
+        }
+    }
+    
+}
+
+.hasHover .bar:hover {  
+    .logo i{
+        margin-left: 0.4rem;
+        transition: transform 1s;
+        transform: rotate(-180deg);
+    }
+}

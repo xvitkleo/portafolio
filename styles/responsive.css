@@ -1,0 +1,33 @@
+@media (max-width: 600px) {
+  .bar {
+    bottom: 0;
+    top: auto;
+    width: 100vw;
+  }
+  .bar_nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .bar_nav_item {
+    width: 25vw;
+  }
+  .bar_nav_item:first-child {
+    display: none;
+  }
+  section {
+    height: 88vh;
+    border: solid white 0.5rem;
+  }
+  .home {
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

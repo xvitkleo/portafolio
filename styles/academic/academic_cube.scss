@@ -1,0 +1,107 @@
+.scene {
+    width: 12.5rem;
+    height: 12.5rem;
+    perspective: 37.5rem;
+    margin: 1.3rem 0rem 1.5rem 3rem;
+    cursor: pointer;
+
+    img {
+        width: 9rem;
+        height: 9rem;
+        opacity: 40%;
+        margin: 1.5rem;
+        //filter: blur(3px);        
+    }
+}
+
+.scene {
+    margin: 20vh auto 0 auto;
+}
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    overflow: visible;
+    transition: transform 0.8s;
+    transform: translateZ(-100px); 
+}
+
+.cube__face {
+    position: absolute;
+    width: 12.5rem;
+    height: 12.5rem;
+    background-color: rgba(253, 253, 253, 0.226);
+    //border: solid 2px rgba(255, 255, 255, 0.041);
+    line-height: 12.5rem;
+    text-align: center;    
+}
+
+.cube__face--front  { transform: rotateY(  0deg) translateZ(100px); }
+.cube__face--right  { transform: rotateY( 90deg) translateZ(100px); }
+.cube__face--back   { transform: rotateY(180deg) translateZ(100px); }
+.cube__face--left   { transform: rotateY(-90deg) translateZ(100px); }
+.cube__face--top    { transform: rotateX( 90deg) translateZ(100px); }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(100px); }
+  
+.cube.show-front  { 
+    .cube__face--front img{
+        filter: none;
+    }
+    transform: translateZ(-100px) rotateY(   0deg); 
+}
+.cube.show-right  { 
+    .cube__face--right img{
+        filter: none;
+    }
+    transform: translateZ(-100px) rotateY( -90deg); 
+}
+.cube.show-back   { 
+    .cube__face--back img{
+        filter: none;
+    }
+    transform: translateZ(-100px) rotateY(-180deg); 
+}
+.cube.show-left   { 
+    .cube__face--left img{
+        filter: none;
+    }
+    transform: translateZ(-100px) rotateY(  90deg); 
+}
+.cube.show-top    { 
+    .cube__face--top img{
+        filter: none;
+    }
+    transform: translateZ(-100px) rotateX( -90deg); 
+}
+.cube.show-bottom { 
+    .cube__face--bottom img{
+        filter: none;
+    }
+    transform: translateZ(-100px) rotateX(  90deg); 
+}
+
+.cube.random {
+    animation: random 8s infinite linear;
+}
+
+@keyframes random {    
+    0% {
+        transform: translateZ(-100px) rotateY(  90deg); 
+    }
+    20% {
+        transform: translateZ(-100px) rotateX( 180deg); 
+    }
+    40% {
+        transform: translateZ(-100px) rotateY(  90deg); 
+    }
+    60% {
+        transform: translateZ(-100px) rotateY(-90deg); 
+    }
+    80% {
+        transform: translateZ(-100px) rotateX( -180deg); 
+    }
+    100% {
+        transform: translateZ(-100px) rotateY( -270deg); 
+    }
+}//moverlo a javascript para saber en que parte de la rotacion estas

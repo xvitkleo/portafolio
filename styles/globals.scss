@@ -1,0 +1,43 @@
+@import "variables";
+*{       
+    font-family: 'Raleway', sans-serif;   
+    //font-family: 'Roboto mono';
+    color: white;    
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    border: solid white 2rem;      
+    background-color: $color-principal; 
+}
+
+body {
+    overflow: hidden;
+    background-color: white;
+};
+
+
+.container {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+h1 {          
+    padding-right: 0.5rem;
+    font-size: 4rem;
+    font-weight: 900;
+    color: $color-secundario; 
+    cursor: pointer;
+    transition: transform 1s;        
+    &:hover {
+        transform: rotate(360deg);
+        color: white;
+    }
+}

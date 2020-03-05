@@ -1,0 +1,23 @@
+.scrollbar {
+  z-index: 1;
+  height: 60vh;
+  top: 20vh;
+  right: 0.7rem;
+  position: fixed;
+  width: 0.5rem;
+  background-color: #181818;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.scrollbar div {
+  position: absolute;
+  width: 100%;
+  background-color: #ff5851;
+  height: 15vh;
+  border: solid #ff5851 2px;
+  border-radius: 20px;
+  -webkit-transition: height  1s ease;
+  transition: height  1s ease;
+}
+/*# sourceMappingURL=scrollbar.css.map */
